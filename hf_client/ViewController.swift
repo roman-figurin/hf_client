@@ -8,18 +8,37 @@
 
 import UIKit
 
+extension Notification.Name {
+    static let damaged = Notification.Name("damaged")
+    static let ok = Notification.Name("ok")
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(setToDamaged(notification:)),
+                                               name: .damaged,
+                                               object: nil)
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(setToOk(notification:)),
+                                               name: .ok,
+                                               object: nil)
+        
+        NetworkManager.makeGetCall()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // handlers
+    @objc func setToDamaged(notification: NSNotification) {
+        print("damaged notification")
     }
 
+    @objc func setToOk(notification: NSNotification) {
+        print("ok notification")
+    }
 
 }
 
