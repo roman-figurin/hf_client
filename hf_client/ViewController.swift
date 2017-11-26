@@ -28,7 +28,8 @@ class ViewController: UIViewController {
                                                name: .ok,
                                                object: nil)
         
-        NetworkManager.makeGetCall()
+        makeNetworkCall()
+        runTimer()
     }
 
     // handlers
@@ -61,6 +62,19 @@ class ViewController: UIViewController {
             controller.view.removeFromSuperview()
             controller.removeFromParentViewController()
         }
+    }
+    
+    func runTimer() {
+        var timer = Timer()
+        timer = Timer.scheduledTimer(timeInterval: 10,
+                                     target: self,
+                                     selector: (#selector(ViewController.makeNetworkCall)),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    @objc func makeNetworkCall() {
+        NetworkManager.makeGetCall()
     }
 }
 
