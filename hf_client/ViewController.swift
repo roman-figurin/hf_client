@@ -14,7 +14,7 @@ extension Notification.Name {
 }
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,11 +34,33 @@ class ViewController: UIViewController {
     // handlers
     @objc func setToDamaged(notification: NSNotification) {
         print("damaged notification")
+        
+        DispatchQueue.main.async {
+            self.removeSubviewAndSubcontrollers()
+            let damagedVC: DamagedVC = DamagedVC()
+            self.view.addSubview(damagedVC.view)
+            self.addChildViewController(damagedVC)
+        }
+        
+        
     }
 
     @objc func setToOk(notification: NSNotification) {
         print("ok notification")
+        DispatchQueue.main.async {
+            self.removeSubviewAndSubcontrollers()
+            let cargoIsOkVC: CargoIsOkVC = CargoIsOkVC()
+            self.view.addSubview(cargoIsOkVC.view)
+            self.addChildViewController(cargoIsOkVC)
+        }
     }
 
+    // helpers
+    func removeSubviewAndSubcontrollers() {
+        for controller in self.childViewControllers {
+            controller.view.removeFromSuperview()
+            controller.removeFromParentViewController()
+        }
+    }
 }
 

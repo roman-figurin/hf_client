@@ -15,6 +15,10 @@
 		90E238D91FCA482500F02C30 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E238D71FCA482500F02C30 /* LoadingVC.swift */; };
 		90E238DA1FCA482500F02C30 /* LoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E238D81FCA482500F02C30 /* LoadingVC.xib */; };
 		90E238DD1FCA49F500F02C30 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E238DC1FCA49F500F02C30 /* NetworkManager.swift */; };
+		90E238E01FCA95B700F02C30 /* DamagedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E238DE1FCA95B700F02C30 /* DamagedVC.swift */; };
+		90E238E11FCA95B700F02C30 /* DamagedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E238DF1FCA95B700F02C30 /* DamagedVC.xib */; };
+		90E238E41FCA95CC00F02C30 /* CargoIsOkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E238E21FCA95CC00F02C30 /* CargoIsOkVC.swift */; };
+		90E238E51FCA95CC00F02C30 /* CargoIsOkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E238E31FCA95CC00F02C30 /* CargoIsOkVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		90E238D71FCA482500F02C30 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		90E238D81FCA482500F02C30 /* LoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingVC.xib; sourceTree = "<group>"; };
 		90E238DC1FCA49F500F02C30 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		90E238DE1FCA95B700F02C30 /* DamagedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamagedVC.swift; sourceTree = "<group>"; };
+		90E238DF1FCA95B700F02C30 /* DamagedVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DamagedVC.xib; sourceTree = "<group>"; };
+		90E238E21FCA95CC00F02C30 /* CargoIsOkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoIsOkVC.swift; sourceTree = "<group>"; };
+		90E238E31FCA95CC00F02C30 /* CargoIsOkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CargoIsOkVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 			children = (
 				90E238D71FCA482500F02C30 /* LoadingVC.swift */,
 				90E238D81FCA482500F02C30 /* LoadingVC.xib */,
+				90E238DE1FCA95B700F02C30 /* DamagedVC.swift */,
+				90E238DF1FCA95B700F02C30 /* DamagedVC.xib */,
+				90E238E21FCA95CC00F02C30 /* CargoIsOkVC.swift */,
+				90E238E31FCA95CC00F02C30 /* CargoIsOkVC.xib */,
 			);
 			path = child_controllers;
 			sourceTree = "<group>";
@@ -148,8 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E238E11FCA95B700F02C30 /* DamagedVC.xib in Resources */,
 				903BE1461FCA40CA006B1BAB /* LaunchScreen.storyboard in Resources */,
 				90E238DA1FCA482500F02C30 /* LoadingVC.xib in Resources */,
+				90E238E51FCA95CC00F02C30 /* CargoIsOkVC.xib in Resources */,
 				903BE1431FCA40CA006B1BAB /* Assets.xcassets in Resources */,
 				903BE1411FCA40CA006B1BAB /* Main.storyboard in Resources */,
 			);
@@ -165,7 +179,9 @@
 				90E238DD1FCA49F500F02C30 /* NetworkManager.swift in Sources */,
 				903BE13E1FCA40CA006B1BAB /* ViewController.swift in Sources */,
 				903BE13C1FCA40CA006B1BAB /* AppDelegate.swift in Sources */,
+				90E238E41FCA95CC00F02C30 /* CargoIsOkVC.swift in Sources */,
 				90E238D91FCA482500F02C30 /* LoadingVC.swift in Sources */,
+				90E238E01FCA95B700F02C30 /* DamagedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
